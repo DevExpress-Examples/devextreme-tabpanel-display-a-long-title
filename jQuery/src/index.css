@@ -2,3 +2,20 @@
     margin: 50px;
     width: 90vh;
 }
+.wordwrap {
+    width: 100px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+#tabpanel2 .dx-tabs .dx-tab.dx-item {
+    width: auto;
+}
+
+#tabpanel3 .dx-item.dx-tab {
+    max-width: 200px;
+    white-space: normal;
+}
+.tabs {
+    margin-bottom: 30px;
+}
