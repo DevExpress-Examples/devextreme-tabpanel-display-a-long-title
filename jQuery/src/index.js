@@ -20,7 +20,7 @@ $(() => {
     itemTitleTemplate(data, index, element) {
       element.text(data.title);
       element.attr('title', data.title);
-      element.addClass('wordwrap');
+      element.addClass('show-ellipsis');
     },
   });
   $('#tabpanel2').dxTabPanel({
