@@ -3,7 +3,7 @@
   width: 90vh;
 }
 
-.wordwrap {
+.show-ellipsis {
   width: 100px;
   overflow: hidden;
   text-overflow: ellipsis;

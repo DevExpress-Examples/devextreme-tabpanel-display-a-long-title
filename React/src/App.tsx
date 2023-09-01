@@ -32,7 +32,7 @@ const commonConfiguration = {
 
 function TitleWordWrap(props: any): JSX.Element {
   return (
-    <div title={props.title} className='wordwrap'>
+    <div title={props.title} className='show-ellipsis'>
       {props.title}
     </div>
   );
@@ -68,7 +68,7 @@ function App(): JSX.Element {
       ></TabPanel>
 
       <p>
-        <b>Display text line by line</b>
+        <b>Title word-wrap</b>
       </p>
       <TabPanel id='tabpanel3' {...commonConfiguration}></TabPanel>
     </div>
