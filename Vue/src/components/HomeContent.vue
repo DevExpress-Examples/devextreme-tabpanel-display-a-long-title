@@ -7,10 +7,10 @@ import TabPanelCommon from "./TabPanelCommon.vue";
     <p><b>Display ellipses (...)</b></p>
     <TabPanelCommon
       class="tabs"
-      item-title-template="wordWrapTitle"
+      item-title-template="ellipsisTitle"
     >
-      <template #wordWrapTitle="{ data }">
-        <div :title="data.title" class="wordwrap">
+      <template #ellipsisTitle="{ data }">
+        <div :title="data.title" class="show-ellipsis">
           {{ data.title }}
         </div>
       </template>
@@ -19,12 +19,12 @@ import TabPanelCommon from "./TabPanelCommon.vue";
     <p><b>Show full text</b></p>
     <TabPanelCommon id="tabpanel2" />
 
-    <p><b>Display text line by line</b></p>
+    <p><b>Title word-wrap</b></p>
     <TabPanelCommon id="tabpanel3" />
   </div>
 </template>
 <style>
-.wordwrap {
+.show-ellipsis {
   width: 100px;
   overflow: hidden;
   text-overflow: ellipsis;
