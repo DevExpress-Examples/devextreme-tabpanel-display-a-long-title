@@ -5,11 +5,11 @@
 
 # TabPanel for DevExtreme - Display a long tab title in 3 different ways
 
-This example demonstrates how to display a long tab title when the TabPanel has fixed width. You can use one of the following solutions:
+This example demonstrates how to display a long tab title when the TabPanel has a fixed width. You can use one of the following solutions:
 
 <div align="center"><img src="/tabpanel-titles.png" alt="TabPanel - Display a long tab title in 3 different ways" /></div>
 
-Examine the `.css` file of the project for detailed information on every solution.
+Examine the `.css` file of the project for more information on every solution.
 
 ## Files to Review
 
