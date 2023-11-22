@@ -9,9 +9,9 @@ import { Service, TabPanelItem } from "../app.service";
 })
 
 export class TabPanelCommonComponent {
-  @Input() itemTitleTemplate: string;
-  @Input() id: string;
-  @Input() class: string;
+  @Input() itemTitleTemplate!: string;
+  @Input() id!: string;
+  @Input() class!: string;
 
   tabPanelItems: TabPanelItem[];
 
