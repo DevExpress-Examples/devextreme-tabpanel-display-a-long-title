@@ -14,6 +14,11 @@ Examine the `.css` file of the project for more information on every solution.
 
 ## Files to Review
 
+- **Angular**
+  - [tab-panel-common.component.html](Angular/src/app/tab-panel-common/tab-panel-common.component.html)
+  - [tab-panel-common.component.ts](Angular/src/app/tab-panel-common/tab-panel-common.component.ts)
+  - [app.component.html](Angular/src/app/app.component.html)
+  - [app.component.scss](Angular/src/app/app.component.scss)
 - **jQuery**
   - [index.js](jQuery/src/index.js)
   - [index.css](jQuery/src/index.css)
