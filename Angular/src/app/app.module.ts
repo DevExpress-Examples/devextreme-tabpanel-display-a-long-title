@@ -1,19 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { DxButtonModule } from 'devextreme-angular/ui/button';
-import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
+import { TabPanelCommonComponent } from "./tab-panel-common/tab-panel-common.component";
+
+import {
+  DxTabPanelModule,
+  DxCheckBoxModule,
+  DxTemplateModule
+} from "devextreme-angular";
 
 @NgModule({
   declarations: [
     AppComponent,
+		TabPanelCommonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    DxButtonModule,
+		DxTabPanelModule,
+		DxCheckBoxModule,
+		DxTemplateModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

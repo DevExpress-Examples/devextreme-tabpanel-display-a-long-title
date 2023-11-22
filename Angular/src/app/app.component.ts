@@ -1,20 +1,37 @@
 import { Component } from '@angular/core';
-import { ClickEvent } from 'devextreme/ui/button';
+
+import { TabPanelItem, Service } from "./app.service";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  providers: [Service],
 })
-export class AppComponent {
-  title = 'Angular';
+export class AppComponent  {
+	tabPanelItems: TabPanelItem[];
 
-  counter = 0;
+  tabPanels = [
+    {
+      header: "Display ellipses (...)",
+      id: "tabpanel1",
+      class: "tabs",
+      itemTitleTemplate: "titleEllipses"
+    },
+    {
+      header: "Show full text",
+      id: "tabpanel2",
+      class: "tabs",
+      itemTitleTemplate: "titleDefault"
+    },
+    {
+      header: "Display text line by line",
+      id: "tabpanel3",
+      itemTitleTemplate: "titleDefault"
+    }
+  ];
 
-  buttonText = 'Click count: 0';
-
-  onClick(e: ClickEvent): void {
-    this.counter++;
-    this.buttonText = `Click count: ${this.counter}`;
+  constructor(service: Service) {
+    this.tabPanelItems = service.getTabPanelItems();
   }
 }

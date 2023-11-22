@@ -1,3 +1,10 @@
-<div class="default-style">
-  <dx-button [text]="buttonText" (onClick)="onClick($event)"></dx-button>
+<div class='demo-container'>
+	<ng-container *ngFor="let tabPanel of tabPanels">
+		<p><b>{{ tabPanel.header }}</b></p>
+		<tab-panel-common
+			[id]="tabPanel.id"
+			[class]="tabPanel.class!"
+			[itemTitleTemplate]="tabPanel.itemTitleTemplate"
+		></tab-panel-common>
+	</ng-container>
 </div>

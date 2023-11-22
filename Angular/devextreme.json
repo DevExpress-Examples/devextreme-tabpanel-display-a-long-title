@@ -1,0 +1,7 @@
+{
+  "applicationEngine": "angular",
+  "build": {
+    "commands": [
+    ]
+  }
+}
