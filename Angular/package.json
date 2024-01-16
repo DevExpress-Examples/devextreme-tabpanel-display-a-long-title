@@ -8,7 +8,11 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build-themes": "devextreme build",
-    "postinstall": "npm run build-themes"
+    "postinstall": "npm run build-themes",
+		"lint-html": "prettier --check .",
+    "lint-ts": "eslint --ext .ts .",
+    "lint-css": "stylelint src/**/*.{css,scss} --allow-empty-input",
+    "lint": "npm-run-all -p -c lint-ts lint-css lint-html"
   },
   "private": true,
   "dependencies": {

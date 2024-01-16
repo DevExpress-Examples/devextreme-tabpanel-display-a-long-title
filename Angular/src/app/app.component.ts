@@ -25,7 +25,7 @@ export class AppComponent  {
       itemTitleTemplate: "titleDefault"
     },
     {
-      header: "Display text line by line",
+      header: "Title word-wrap",
       id: "tabpanel3",
       itemTitleTemplate: "titleDefault"
     }
