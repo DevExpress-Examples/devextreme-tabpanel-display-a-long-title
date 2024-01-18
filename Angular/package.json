@@ -10,9 +10,9 @@
     "build-themes": "devextreme build",
     "postinstall": "npm run build-themes",
     "lint-html": "prettier --check .",
-    "lint-ts": "eslint --ext .ts .",
+    "lint-ts": "eslint --fix --ext .ts .",
     "lint-css": "stylelint src/**/*.{css,scss} --allow-empty-input",
-    "lint": "npm-run-all -p -c lint-ts lint-css lint-html --fix"
+    "lint": "npm-run-all -p -c lint-ts lint-css lint-html"
   },
   "private": true,
   "dependencies": {
