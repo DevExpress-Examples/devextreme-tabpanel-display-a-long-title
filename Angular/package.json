@@ -9,7 +9,7 @@
     "test": "ng test",
     "build-themes": "devextreme build",
     "postinstall": "npm run build-themes",
-    "lint-html": "prettier --check .",
+    "lint-html": "prettier --write --check .",
     "lint-ts": "eslint --fix --ext .ts .",
     "lint-css": "stylelint src/**/*.{css,scss} --allow-empty-input",
     "lint": "npm-run-all -p -c lint-ts lint-css lint-html"
