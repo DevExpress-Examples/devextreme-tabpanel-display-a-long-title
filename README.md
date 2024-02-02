@@ -19,12 +19,19 @@ Examine the `.css` file of the project for more information on every solution.
   - [tab-panel-common.component.ts](Angular/src/app/tab-panel-common/tab-panel-common.component.ts)
   - [app.component.html](Angular/src/app/app.component.html)
   - [app.component.scss](Angular/src/app/app.component.scss)
+- **ASP.NET**
+  - [HomeController.cs](ASP.NET%20Core/Controllers/HomeController.cs)
+  - [Index.cshtml](ASP.NET%20Core/Views/Home/Index.cshtml)
+  - [_Layout.cshtml](ASP.NET%20Core/Views/Shared/_Layout.cshtml)
 - **jQuery**
   - [index.js](jQuery/src/index.js)
   - [index.css](jQuery/src/index.css)
 - **React**
   - [App.tsx](React/src/App.tsx)
   - [App.css](React/src/App.css)
+- **Vue**
+  - [TabPanelCommon.vue](Vue/src/components/TabPanelCommon.vue)
+  - [HomeContent.vue](Vue/src/components/HomeContent.vue)
 
 ## Documentation
 
