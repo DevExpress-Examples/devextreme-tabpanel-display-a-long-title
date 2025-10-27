@@ -1,0 +1,25 @@
+<dx-tab-panel
+  [width]="400"
+  [id]="id"
+  [class]="class"
+  [dataSource]="tabPanelItems"
+  [focusStateEnabled]="false"
+  [scrollByContent]="true"
+  [scrollingEnabled]="true"
+  [showNavButtons]="true"
+  [deferRendering]="true"
+  itemTemplate="itemTemplate"
+  [itemTitleTemplate]="itemTitleTemplate"
+>
+  <div *dxTemplate="let data of 'titleEllipses'" class="show-ellipsis">
+    <span>{{ data.title }}</span>
+  </div>
+
+  <div *dxTemplate="let data of 'titleDefault'">
+    <span>{{ data.title }}</span>
+  </div>
+
+  <div *dxTemplate="let data of 'itemTemplate'">
+    <span>{{ data.title }}</span>
+  </div>
+</dx-tab-panel>
