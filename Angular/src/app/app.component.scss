@@ -1,4 +1,24 @@
-.default-style {
-  margin: 50px;
-  width: 90vw;
+.demo-container {
+	margin: 50px;
+	width: 90vh;
+}
+
+::ng-deep .show-ellipsis {
+	display: block;
+	width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+::ng-deep #tabpanel2 .dx-tabs .dx-tab.dx-item {
+	width: auto;
+}
+
+::ng-deep #tabpanel3 .dx-item.dx-tab {
+	max-width: 200px;
+	white-space: normal;
+}
+
+::ng-deep .tabs {
+	margin-bottom: 30px;
 }
