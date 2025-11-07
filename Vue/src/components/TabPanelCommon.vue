@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref } from 'vue';
 
-import "devextreme/dist/css/dx.material.blue.light.compact.css";
-import DxTabPanel from "devextreme-vue/tab-panel";
+import 'devextreme/dist/css/dx.material.blue.light.compact.css';
+import DxTabPanel from 'devextreme-vue/tab-panel';
 
 const tabPanelItems = ref([
   {
@@ -39,8 +39,14 @@ const tabPanelItems = ref([
       <div>{{ data.title }}</div>
     </template>
 
-    <template v-for="(_, name) in $slots" v-slot:[name]="{ data }">
-      <slot :name="name" :data="data"></slot>
+    <template
+      v-for="(_, name) in $slots"
+      #[name]="{ data }"
+    >
+      <slot
+        :name="name"
+        :data="data"
+      />
     </template>
   </DxTabPanel>
 </template>
