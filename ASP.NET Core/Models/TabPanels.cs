@@ -1,4 +1,6 @@
-﻿namespace TabPanel_Display_long_titles.Models
+﻿using System.Collections.Generic;
+
+namespace TabPanel_Display_long_titles.Models
 {
     public class TabPanels
 {

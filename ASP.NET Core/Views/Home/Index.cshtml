@@ -1,29 +1,33 @@
-@using ASP_NET_Core.Models
+@using TabPanel_Display_long_titles.Models
 
-<h2>Home</h2>
+@foreach (var tabPanel in TabPanels.TabPanelsArray)
+{
+    <p><b>@tabPanel.header</b></p>
 
-@(Html.DevExtreme().DataGrid<SampleOrder>()
-    .ShowBorders(true)
-    .DataSource(d => d.Mvc().Controller("SampleData").LoadAction("Get").Key("OrderID"))
-    .Columns(columns => {
-        columns.AddFor(m => m.OrderID);
-        columns.AddFor(m => m.OrderDate);
-        columns.AddFor(m => m.CustomerName);
-        columns.AddFor(m => m.ShipCountry);
-        columns.AddFor(m => m.ShipCity);
-    })
-    .Paging(p => p.PageSize(10))
-    .FilterRow(f => f.Visible(true))
-    .HeaderFilter(f => f.Visible(true))
-    .GroupPanel(p => p.Visible(true))
-    .Grouping(g => g.AutoExpandAll(false))
-    .RemoteOperations(true)
-    .Summary(s => s
-        .TotalItems(totalItems => {
-            totalItems.AddFor(m => m.ShipCity).SummaryType(SummaryType.Count);
-        })
-        .GroupItems(groupItems => {
-            groupItems.Add().SummaryType(SummaryType.Count);
-        })
+    @(Html.DevExtreme().TabPanel()
+        .ID(tabPanel.id)
+        .ElementAttr(new { @class = tabPanel.className })
+        .Width(400)
+        .FocusStateEnabled(false)
+        .ScrollByContent(true)
+        .ScrollingEnabled(true)
+        .ShowNavButtons(true)
+        .DeferRendering(true)
+        .DataSource(d => d.Mvc().LoadAction("GetTabPanelItems"))
+        .ItemTitleTemplate(@<text>
+            @if(tabPanel.itemTitleTemplate == "titleEllipses") {
+                <div class="show-ellipsis">
+                    <span><%- title %></span>
+                </div>
+            }
+            else {
+                <div>
+                    <span><%- title %></span>
+                </div>
+            }
+        </text>)
+        .ItemTemplate(@<text>
+            <span><%- title %></span>
+        </text>)
     )
-)
+}
