@@ -39,7 +39,7 @@ Examine the `.css` file of the project for more information on every solution.
 - [Getting Started with TabPanel](https://js.devexpress.com/Documentation/Guide/UI_Components/TabPanel/Getting_Started_with_TabPanel/)
 - [TabPanel - API Reference](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxTabPanel/)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=devextreme-tabpanel-display-a-long-title&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=devextreme-tabpanel-display-a-long-title&~~~was_helpful=no)
 
