@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
 import { TabPanelItem, Service } from './app.service';
+import { DxTabPanelModule, DxCheckBoxModule, DxTemplateModule } from 'devextreme-angular';
+import { TabPanelCommonComponent } from './tab-panel-common/tab-panel-common.component';
 
 @Component({
   selector: 'app-root',
+  imports: [DxTabPanelModule, DxCheckBoxModule, DxTemplateModule, TabPanelCommonComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   providers: [Service],

@@ -1,8 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { Service, TabPanelItem } from '../app.service';
+import { DxTabPanelModule, DxCheckBoxModule, DxTemplateModule } from 'devextreme-angular';
 
 @Component({
   selector: 'tab-panel-common',
+  imports: [DxTabPanelModule, DxCheckBoxModule, DxTemplateModule],
   templateUrl: './tab-panel-common.component.html',
   styleUrls: ['./tab-panel-common.component.scss'],
   providers: [Service],
