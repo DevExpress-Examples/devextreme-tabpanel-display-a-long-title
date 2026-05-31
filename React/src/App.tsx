@@ -17,6 +17,14 @@ const tabPanelItems = [
   },
 ];
 
+function Title(props: any): JSX.Element {
+  return <div>{props.title}</div>;
+}
+
+function Item(props: any): JSX.Element {
+  return <div>{props.title}</div>;
+}
+
 const commonConfiguration = {
   width: 400,
   itemRender: Item,
@@ -35,14 +43,6 @@ function TitleWordWrap(props: any): JSX.Element {
       {props.title}
     </div>
   );
-}
-
-function Title(props: any): JSX.Element {
-  return <div>{props.title}</div>;
-}
-
-function Item(props: any): JSX.Element {
-  return <div>{props.title}</div>;
 }
 
 function App(): JSX.Element {
