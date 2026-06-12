@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { Service, TabPanelItem } from '../app.service';
 import { DxTabPanelModule, DxCheckBoxModule, DxTemplateModule } from 'devextreme-angular';
 
@@ -7,6 +7,7 @@ import { DxTabPanelModule, DxCheckBoxModule, DxTemplateModule } from 'devextreme
   imports: [DxTabPanelModule, DxCheckBoxModule, DxTemplateModule],
   templateUrl: './tab-panel-common.component.html',
   styleUrls: ['./tab-panel-common.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   providers: [Service],
 })
 

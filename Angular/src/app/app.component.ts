@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { TabPanelItem, Service } from './app.service';
 import { DxTabPanelModule, DxCheckBoxModule, DxTemplateModule } from 'devextreme-angular';
 import { TabPanelCommonComponent } from './tab-panel-common/tab-panel-common.component';
@@ -9,6 +9,7 @@ import { NgFor } from '@angular/common';
   imports: [DxTabPanelModule, DxCheckBoxModule, DxTemplateModule, TabPanelCommonComponent, NgFor],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   providers: [Service],
 })
 export class AppComponent {
